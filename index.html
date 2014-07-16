@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" /> 
+		<!--
+  		LICENSE: http://opensource.org/licenses/ms-pl 
+		-->
+		
+        <title></title>
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    </head>
+
+    <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);" class="credit">
+	<div id="header"></div>
+	<div id="content">
+		<h1>Heading</h1>
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci nulla. Nam sed nisi ac neque bibendum fringilla vitae quis elit. Maecenas mattis viverra orci in rutrum.
+                <strong>(Click on the benefit to view details.)</strong></h2>
+		<div id="content-nav">
+		
+			<p class="accordion_toggle"><a href="#" accesskey="2">Really Great Information</a></p>
+			<div class="accordion_content">
+				<div class="horizontal_container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci nulla. Nam sed nisi ac neque bibendum fringilla vitae quis elit. Maecenas mattis viverra orci in rutrum. Vivamus non vehicula velit. Pellentesque commodo urna eget tellus gravida vestibulum. Nullam pellentesque, nisi id convallis lacinia, libero felis cursus est, ut porttitor felis odio vel quam. Aliquam dignissim volutpat malesuada.</p>					
+					<button class="yellow-button">View Example</button>
+				</div>
+			</div>
+			
+			<p class="accordion_toggle"><a href="#" accesskey="3">Even More Great Information</a></p>
+			<div class="accordion_content">
+				<div class="horizontal_container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci nulla. Nam sed nisi ac neque bibendum fringilla vitae quis elit. Maecenas mattis viverra orci in rutrum. Vivamus non vehicula velit. Pellentesque commodo urna eget tellus gravida vestibulum. Nullam pellentesque, nisi id convallis lacinia, libero felis cursus est, ut porttitor felis odio vel quam. Aliquam dignissim volutpat malesuada.</p>
+				</div>
+			</div>
+			
+			<p class="accordion_toggle"><a href="#" accesskey="4">I Cannot Believe There is Even More</a></p>
+			<div class="accordion_content">
+				<div class="horizontal_container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci nulla. Nam sed nisi ac neque bibendum fringilla vitae quis elit. Maecenas mattis viverra orci in rutrum. Vivamus non vehicula velit. Pellentesque commodo urna eget tellus gravida vestibulum. Nullam pellentesque, nisi id convallis lacinia, libero felis cursus est, ut porttitor felis odio vel quam. Aliquam dignissim volutpat malesuada.</p>
+				</div>
+			</div>
+			
+			<p class="accordion_toggle"><a href="#" accesskey="5">Not So Much Down Here</a></p>
+			<div class="accordion_content">
+				<div class="horizontal_container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut orci nulla. Nam sed nisi ac neque bibendum fringilla vitae quis elit. Maecenas mattis viverra orci in rutrum. Vivamus non vehicula velit. Pellentesque commodo urna eget tellus gravida vestibulum. Nullam pellentesque, nisi id convallis lacinia, libero felis cursus est, ut porttitor felis odio vel quam. Aliquam dignissim volutpat malesuada.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer-nav">
+			<p><a href="#" title="Home" accesskey="0">Home</a></p>
+			<p><a href="#" title="Sign In" accesskey="0">Sign In</a></p>
+			<p><a href="#" title="Member Benefits" accesskey="0">Member Benefits</a></p>
+			<p><a href="#" title="Join" accesskey="0">Join</a></p>
+			<p><a href="#" title="FAQs" accesskey="0">FAQs</a></p>
+			<p><a href="#" title="Customer Center" accesskey="0">Customer Center</a></p>
+		</div>
+		<div id="footer-border"></div>
+		<div id="footer-links">
+			<p><a href="#" accesskey="0" title="Terms &amp; Conditions">Terms &amp; Conditions</a> | <a href="#" accesskey="0" title="Privacy Policy">Privacy Policy</a></p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.accordion_content').hide();
+
+			$('.accordion_toggle a').click(function(e){
+				if($(this).parent().hasClass('current')) {
+					$(this).parent()
+						.removeClass('current')
+						.next('.accordion_content').slideUp();
+				} else {
+					$(document).find('.current')
+						.removeClass('current')
+						.next('.accordion_content').slideUp();
+					$(this).parent()
+						.addClass('current')
+						.next('.accordion_content').slideDown();
+				}
+				e.preventDefault();
+			});
+		});
+	</script>
+	
+</body>
+</html>
