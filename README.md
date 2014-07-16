@@ -14,6 +14,12 @@ Create your HTML with your titles and content in div tags
 Step 3:
 Add the JavaScript
 
+Demo here
+http://drew5.net/examples/accordion-example/example1.html
+
+Write up here
+http://drew5.net/2011/03/10/jquery-accordion-with-8-lines-of-code/
+
 
 
 DISCLAIMER:
