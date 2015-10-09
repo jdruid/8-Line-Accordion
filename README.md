@@ -1,9 +1,11 @@
-8-Line-Accordion
+# 8-Line-Accordion
 ================
 
 Maybe more than 8 lines of code but very little.  jQuery accorion for either a mobile web site or desktop web.
 
 Super simple accordion.
+
+## Installation
 
 Step 1: 
 Make sure you embed jQuery in your HTML
@@ -14,15 +16,35 @@ Create your HTML with your titles and content in div tags
 Step 3:
 Add the JavaScript
 
-Demo here
+## Usage
+
+You can follow the step by step instructions here - More info can be found @ Demo here
 http://drew5.net/examples/accordion-example/example1.html
 
 Write up here
-http://drew5.net/2011/03/10/jquery-accordion-with-8-lines-of-code/
+http://drew5.net/code/jquery-accordion-with-8-lines-of-code/
+
+## History
+
+None at this time
+
+## Credits
+
+Joshua Drew
+Sr Technical Evangelist - Microsoft
+@jdruid
+Drew5.net
+
+## License
+
+Apache License 
+
+Version 2.0, January 2004 
+
+http://www.apache.org/licenses
 
 
-
-DISCLAIMER:
+## DISCLAIMER:
 ================
 The sample code described herein is provided on an "as is" basis, without warranty of any kind, to the fullest extent permitted by law. Both Microsoft and I do not warrant or guarantee the individual success developers may have in implementing the sample code on their development platforms or in using their own Web server configurations. 
 
